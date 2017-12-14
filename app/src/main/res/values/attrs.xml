@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--完成进度条-->
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <!--粒子动画样式-->
+    <declare-styleable name="ParticleView">
+        <attr name="pv_host_text" format="string"></attr>
+        <attr name="pv_particle_text" format="string"></attr>
+        <attr name="pv_particle_text_size" format="dimension"></attr>
+        <attr name="pv_text_color" format="color"></attr>
+        <attr name="pv_background_color" format="color"></attr>
+    </declare-styleable>
+
+    <!--圆形ImageView-->
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="mutate_background" format="boolean" />
+        <attr name="oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension" />
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference" />
+        <attr name="shadow_right" format="reference" />
+        <attr name="shadow_bottom" format="reference" />
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference" />
+    <attr name="textColorFirst" format="color" />
+    <attr name="textColorSecond" format="color" />
+    <attr name="textColorThird" format="color" />
+    <attr name="toolbar_Text_Color" format="color" />
+    <attr name="toolbar_Background_Color" format="color" />
+    <attr name="toolbar_Menu_Text_Color" format="color" />
+    <attr name="main_item_background" format="color" />
+    <attr name="main_menu_changetheme" format="string" />
+
+    <attr name="toolbar_height" format="dimension" />
+    <attr name="myTheme" format="integer">
+        <enum name="day" value="0" />
+        <enum name="night" value="1" />
+    </attr>
+
+    <!--指示器-->
+    <declare-styleable name="IndexView">
+        <attr name="IVDefaultColor" format="color" />
+        <attr name="IVSelectColor" format="color" />
+        <attr name="IVPageCount" format="integer" />
+        <attr name="IVViewSize" format="dimension" />
+        <attr name="IVMargin" format="dimension" />
+    </declare-styleable>
+</resources>

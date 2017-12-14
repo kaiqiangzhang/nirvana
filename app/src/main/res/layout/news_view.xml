@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.nirvana.code.core.view.NVWebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="45dp"/>
+
+
+    <com.nirvana.code.core.view.RoundProgressBar
+        android:id="@+id/roundProgressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+
+        android_custom:max="100"
+        android_custom:roundColor="#D1D1D1"
+        android_custom:roundProgressColor="@android:color/holo_red_dark"
+        android_custom:roundWidth="2dp"
+        android_custom:textColor="@android:color/black"
+        android_custom:textSize="13dp" />
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/app_bottom_bar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

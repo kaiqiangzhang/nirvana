@@ -1,0 +1,105 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="WhiteTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/umeng_white</item>
+        <item name="colorPrimaryDark">@color/umeng_white</item>
+        <item name="colorAccent">@color/umeng_white</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--日间主题-->
+    <style name="DayTheme" parent="AppTheme.NoActionBar">
+        <item name="myTheme">day</item>
+        <!--ActionBar背景  -->
+        <item name="colorPrimary">@color/finance_bg2</item>
+        <item name="colorPrimaryDark">@color/finance_bg2</item>
+        <item name="colorAccent">@color/textColorThird_Day</item>
+        <item name="toolbar_Menu_Text_Color">@color/toolbar_Menu_Text_Color_Day</item>
+        <item name="toolbar_Text_Color">@color/toolbar_Text_Color_Day</item>
+        <!--页面背景-->
+        <item name="android:windowBackground">@color/background_Day</item>
+        <!--主页item背景色-->
+        <item name="main_item_background">@color/main_item_background_Day</item>
+        <!--三种文字颜色-->
+        <item name="textColorFirst">@color/textColorFirst_Day</item>
+        <item name="textColorSecond">@color/textColorSecond_Day</item>
+        <item name="textColorThird">@color/textColorThird_Day</item>
+        <!--Actionbar-Menu-文字-->
+        <item name="main_menu_changetheme">@string/main_menu_changetheme_day</item>
+    </style>
+
+    <!--夜晚主题-->
+    <style name="NightTheme" parent="AppTheme.NoActionBar">
+        <item name="myTheme">night</item>
+        <!--ActionBar背景  -->
+        <item name="colorPrimary">@color/topbar_Background_Night</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Night</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="toolbar_Menu_Text_Color">@color/toolbar_Menu_Text_Color_Night</item>
+        <item name="toolbar_Text_Color">@color/toolbar_Text_Color_Night</item>
+        <!--页面背景-->
+        <item name="android:windowBackground">@color/background_Night</item>
+        <!--主页item背景色-->
+        <item name="main_item_background">@color/main_item_background_Night</item>
+        <!--三种文字颜色-->
+        <item name="textColorFirst">@color/textColorFirst_Night</item>
+        <item name="textColorSecond">@color/textColorSecond_Night</item>
+        <item name="textColorThird">@color/textColorThird_Night</item>
+        <!--Actionbar-Menu-文字-->
+        <item name="main_menu_changetheme">@string/main_menu_changetheme_night</item>
+    </style>
+
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+
+    <style name="BannerDefaultStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <!-- 自定义属性在styles.xml中不需要命名空间,直接用属性名就可以了 -->
+        <!-- 开启自动轮播 -->
+        <item name="banner_pointAutoPlayAble">true</item>
+        <!-- 自动轮播的时间间隔 -->
+        <item name="banner_pointAutoPlayInterval">3000</item>
+        <!-- 指示点容器背景 -->
+       <!-- <item name="banner_pointContainerBackground">#11aaaaaa</item>-->
+        <!-- 指示点背景 -->
+        <item name="banner_pointDrawable">@drawable/bga_banner_selector_point_hollow</item>
+        <!-- 指示点容器左右内间距 -->
+        <item name="banner_pointContainerLeftRightPadding">10dp</item>
+        <!-- 指示点上下外间距 -->
+        <item name="banner_pointTopBottomMargin">6dp</item>
+        <!-- 指示点左右外间距 -->
+        <item name="banner_pointLeftRightMargin">3dp</item>
+        <!-- 指示器的位置 -->
+        <item name="banner_indicatorGravity">bottom|center_horizontal</item>
+        <!-- 页码切换过程的时间长度 -->
+        <item name="banner_pageChangeDuration">800</item>
+        <!-- 提示文案的文字大小 -->
+        <item name="banner_tipTextSize">14sp</item>
+        <!-- 提示文案的文字颜色 -->
+        <item name="banner_tipTextColor">@android:color/white</item>
+        <!-- 加载网络数据时覆盖在BGABanner最上层的占位图 -->
+        <!--<item name="banner_placeholderDrawable">@drawable/holder</item>-->
+    </style>
+
+</resources>

@@ -1,0 +1,84 @@
+<com.nirvana.code.core.view.VerticalLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/root_view"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:background="@drawable/huajiao2" >-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.nirvana.code.core.view.NVWebView
+            android:id="@+id/webview"
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <com.nirvana.code.core.view.RoundProgressBar
+            android:id="@+id/roundProgressBar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+
+            android_custom:roundColor="#D1D1D1"
+            android_custom:roundProgressColor="@android:color/holo_red_dark"
+            android_custom:textColor="@android:color/black"
+            android_custom:roundWidth="2dp"
+            android_custom:textSize="13dp"
+            android_custom:max="100"
+            />
+    </RelativeLayout>
+
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:background="@android:color/white" >-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:paddingLeft="1dp"-->
+            <!--android:paddingBottom="1dp"-->
+            <!--android:background="@drawable/layer_list_input_drawable"-->
+            <!--android:hint="请留言"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:background="@android:color/holo_red_light" >-->
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="hello" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:background="@android:color/darker_gray" >-->
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="hello" />-->
+    <!--</RelativeLayout>-->
+
+
+</com.nirvana.code.core.view.VerticalLinearLayout>

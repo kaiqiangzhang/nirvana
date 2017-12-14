@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="35dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:background="@drawable/hot_tag_item_foreground_green_bg"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/hot_tag_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size"
+        android:gravity="center"
+        />
+</LinearLayout>

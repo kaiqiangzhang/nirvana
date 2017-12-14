@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:icon="@mipmap/share_image"
+        android:title="@string/action_settings"
+        app:showAsAction="collapseActionView" />
+    <!--app:actionViewClass="android.support.v7.widget.SearchView"-->
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="80"
+        android:title="GO"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="101"
+        android:icon="@mipmap/icowebview_refresh"
+        android:title="@string/action_refresh"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/action_close"
+        android:orderInCategory="102"
+        android:icon="@drawable/btn_close_v5"
+        android:title="@string/action_close"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/action_login"
+        android:orderInCategory="102"
+        android:icon="@mipmap/icowebview_refresh"
+        android:title="@string/action_login"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/action_sign"
+        android:orderInCategory="103"
+        android:icon="@mipmap/icowebview_refresh"
+        android:title="@string/action_sign"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/nav_share_pic"
+        android:orderInCategory="103"
+        android:icon="@drawable/umeng_share_solid_icon"
+        app:showAsAction="collapseActionView"
+        android:title="分享图片" />
+</menu>
