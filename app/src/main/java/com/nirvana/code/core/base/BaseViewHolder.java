@@ -1,8 +1,9 @@
 package com.nirvana.code.core.base;
 
-import android.support.v7.widget.RecyclerView;
 import android.util.SparseArray;
 import android.view.View;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Created by kriszhang on 2017/8/7.

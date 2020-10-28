@@ -2,13 +2,10 @@ package com.nirvana.product.mainpage.adapter;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
-import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.StateListDrawable;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.nirvana.code.R;

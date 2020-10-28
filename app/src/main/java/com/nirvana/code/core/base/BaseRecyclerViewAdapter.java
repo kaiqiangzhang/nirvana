@@ -1,12 +1,11 @@
 package com.nirvana.code.core.base;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.nirvana.product.mainpage.bean.HotTagBean;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 

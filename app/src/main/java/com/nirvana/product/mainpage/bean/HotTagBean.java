@@ -1,6 +1,7 @@
 package com.nirvana.product.mainpage.bean;
 
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import java.lang.annotation.ElementType;
 import java.util.Comparator;

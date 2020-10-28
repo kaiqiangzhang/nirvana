@@ -9,21 +9,6 @@ import android.net.Uri;
 import android.net.http.SslError;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -47,6 +32,23 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.core.app.ActivityCompat;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 import com.nirvana.code.callbacks.AppBarStateChangeListener;
 import com.nirvana.code.core.base.BaseActivity;
 import com.nirvana.code.core.base.BaseRecyclerViewAdapter;
@@ -74,7 +76,7 @@ import java.util.List;
 import cn.bingoogolapple.bgabanner.BGABanner;
 
 public class Splash extends BaseActivity<MainPagePresenterImpl>
-        implements MainPageContract.View,NavigationView.OnNavigationItemSelectedListener{
+        implements MainPageContract.View, NavigationView.OnNavigationItemSelectedListener{
 
     private NVWebView webView;
     private ViewGroup mRootView;
@@ -191,7 +193,6 @@ public class Splash extends BaseActivity<MainPagePresenterImpl>
         }
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setVisibility(View.GONE);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -317,7 +318,7 @@ public class Splash extends BaseActivity<MainPagePresenterImpl>
                 mShareTitle = webViewTitle;
             }
         });
-        webView.loadUrl(Constant.FIST_PAGE_URL);
+
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
@@ -398,13 +399,15 @@ public class Splash extends BaseActivity<MainPagePresenterImpl>
                 NVTaskExecutor.scheduleTaskOnUiThread(1000, new Runnable() {
                     @Override
                     public void run() {
-//                        webView.reload();
+                        webView.loadUrl(Constant.FIST_PAGE_URL);
                         mSwipeRefreshLayout.setRefreshing(false);
 
                     }
                 });
             }
         });
+
+        webView.loadUrl(Constant.FIST_PAGE_URL);
     }
 
     @Override

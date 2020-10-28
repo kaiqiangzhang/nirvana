@@ -2,18 +2,12 @@ package com.nirvana.code;
 
 import android.app.Application;
 import android.content.Context;
-import android.support.multidex.MultiDex;
 
-import com.nirvana.code.utils.FileUtils;
+import androidx.multidex.MultiDex;
+
 import com.umeng.socialize.Config;
 import com.umeng.socialize.PlatformConfig;
 import com.umeng.socialize.UMShareAPI;
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
-import java.util.Date;
 
 /**
  * Created by kriszhang on 16/7/6.

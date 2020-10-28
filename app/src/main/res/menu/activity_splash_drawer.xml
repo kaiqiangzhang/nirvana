@@ -36,19 +36,19 @@
         <menu>
             <item
                 android:id="@+id/nav_android"
-                android:icon="@drawable/ic_menu_android"
+                android:icon="@drawable/menu_android"
                 android:title="Android" />
             <item
                 android:id="@+id/nav_java"
-                android:icon="@drawable/ic_menu_java"
+                android:icon="@drawable/menu_java"
                 android:title="java" />
             <item
                 android:id="@+id/nav_h5"
-                android:icon="@drawable/ic_menu_html"
+                android:icon="@drawable/menu_html"
                 android:title="Html5" />
             <item
                 android:id="@+id/nav_js"
-                android:icon="@drawable/ic_menu_javascript"
+                android:icon="@drawable/menu_javascript"
                 android:title="javascript" />
 
         </menu>

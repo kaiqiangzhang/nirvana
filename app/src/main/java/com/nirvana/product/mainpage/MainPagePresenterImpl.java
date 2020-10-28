@@ -84,7 +84,7 @@ public class MainPagePresenterImpl implements MainPageContract.Presenter, BGABan
         channel1.setId(1);
         channel1.setName("首页");
         channel1.setUrl(Constant.FIST_PAGE_URL);
-        channel1.setIconResourceId(R.drawable.ic_menu_camera);
+        channel1.setIconResourceId(R.drawable.menu_camera);
         channels.add(channel1);
 
 
@@ -92,35 +92,35 @@ public class MainPagePresenterImpl implements MainPageContract.Presenter, BGABan
         channel2.setId(2);
         channel2.setName("走廊");
         channel2.setUrl(Constant.GALLERY_PAGE_URL);
-        channel2.setIconResourceId(R.drawable.ic_menu_gallery);
+        channel2.setIconResourceId(R.drawable.menu_gallery);
         channels.add(channel2);
 
         Channel channel3 = new Channel();
         channel3.setId(3);
         channel3.setName("视频");
         channel3.setUrl(Constant.VIDEO_PAGE_URL);
-        channel3.setIconResourceId(R.drawable.ic_menu_slideshow);
+        channel3.setIconResourceId(R.drawable.menu_slideshow);
         channels.add(channel3);
 
         Channel channel4 = new Channel();
         channel4.setId(4);
         channel4.setName("问答");
         channel4.setUrl(Constant.ASK_PAGE_URL);
-        channel4.setIconResourceId(R.drawable.ic_menu_send);
+        channel4.setIconResourceId(R.drawable.menu_send);
         channels.add(channel4);
 
         Channel channel5 = new Channel();
         channel5.setId(5);
         channel5.setName("亲子");
         channel5.setUrl(Constant.LOVE_PAGE_URL);
-        channel5.setIconResourceId(R.drawable.ic_menu_lover);
+        channel5.setIconResourceId(R.drawable.menu_lover);
         channels.add(channel5);
 
         Channel channel6 = new Channel();
         channel6.setId(6);
         channel6.setName("关于");
         channel6.setUrl(Constant.ABOUT_PAGE_URL);
-        channel6.setIconResourceId(R.drawable.ic_menu_manage);
+        channel6.setIconResourceId(R.drawable.menu_manage);
         channels.add(channel6);
 
         return channels;
