@@ -62,6 +62,7 @@ import com.nirvana.code.model.Channel;
 import com.nirvana.code.model.MenuPopBean;
 import com.nirvana.code.share.ShareCommon;
 import com.nirvana.code.task.NVTaskExecutor;
+import com.nirvana.code.utils.SharedPreferUtils;
 import com.nirvana.code.widgets.PopMenuView;
 import com.nirvana.product.mainpage.MainPageContract;
 import com.nirvana.product.mainpage.MainPagePresenterImpl;
@@ -100,6 +101,7 @@ public class Splash extends BaseActivity<MainPagePresenterImpl>
     private List<HotTagBean> mHotTags;
     private RecyclerView mHotTagsGridView;
     private MainPageHotTagsAdapter mHotTagAdapter;
+    private TextView mMainDrawSlipText;
 
 
     @Override
@@ -214,6 +216,7 @@ public class Splash extends BaseActivity<MainPagePresenterImpl>
 
         View view = navigationView.getHeaderView(0);
         mGridView = (GridView) view.findViewById(R.id.common_channel);
+        mMainDrawSlipText = (TextView) view.findViewById(R.id.main_draw_slip_test);
         mHotTagsGridView = (RecyclerView) findViewById(R.id.hot_tags_grid);
         mHotTagsGridView.setLayoutManager(new StaggeredGridLayoutManager(3,StaggeredGridLayoutManager.VERTICAL));
         mHotTagAdapter = new MainPageHotTagsAdapter(this,mHotTags,R.layout.hot_tag_item);
@@ -424,6 +427,8 @@ public class Splash extends BaseActivity<MainPagePresenterImpl>
             }
         });
         mPresenter.requestHotTagsData("http://www.haowuyun.com/api/hot_tags.json?maxResults=6");
+        SharedPreferUtils.Companion.saveKeyValue("isLogined","false");
+        mMainDrawSlipText.setText(SharedPreferUtils.Companion.getKeyValue("isLogined"));
     }
 
     public void doSearch(final String searchText, final String historUrl) {
