@@ -5,13 +5,12 @@ import android.security.keystore.KeyGenParameterSpec
 import androidx.security.crypto.EncryptedSharedPreferences
 import androidx.security.crypto.MasterKeys
 import com.nirvana.code.NivanaApplication
-import java.util.*
 
 class SharedPreferUtils {
 
     companion object{
         var sharedPreference: SharedPreferences? = null
-        val fileName:String = "lovein_log"
+        val FILE_NAME:String = "lovein_log"
         val keyGenParamsSpec: KeyGenParameterSpec = MasterKeys.AES256_GCM_SPEC
         val masterKeyAlias:String = MasterKeys.getOrCreate(keyGenParamsSpec)
 
@@ -19,7 +18,7 @@ class SharedPreferUtils {
             synchronized(this) {
                 if (sharedPreference == null) {
                     sharedPreference = EncryptedSharedPreferences.create(
-                        "lovein_log",
+                        FILE_NAME,
                         masterKeyAlias,
                         NivanaApplication.mAPP,
                         EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
