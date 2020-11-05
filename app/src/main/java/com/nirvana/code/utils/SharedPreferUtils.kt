@@ -10,9 +10,9 @@ class SharedPreferUtils {
 
     companion object{
         var sharedPreference: SharedPreferences? = null
-        val FILE_NAME:String = "lovein_log"
-        val keyGenParamsSpec: KeyGenParameterSpec = MasterKeys.AES256_GCM_SPEC
-        val masterKeyAlias:String = MasterKeys.getOrCreate(keyGenParamsSpec)
+        private const val FILE_NAME:String = "lovein_log"
+        private  val keyGenParamsSpec: KeyGenParameterSpec = MasterKeys.AES256_GCM_SPEC
+        private val masterKeyAlias:String = MasterKeys.getOrCreate(keyGenParamsSpec)
 
         open fun getSharedInstance(): SharedPreferences? {
             synchronized(this) {
