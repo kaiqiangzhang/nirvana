@@ -55,14 +55,17 @@ import com.nirvana.code.core.base.BaseRecyclerViewAdapter;
 import com.nirvana.code.core.base.BaseResponse;
 import com.nirvana.code.core.common.manager.SpaceItemDecoration;
 import com.nirvana.code.core.utils.config.BasicConfig;
+import com.nirvana.code.core.view.CircleView;
 import com.nirvana.code.core.view.NVWebView;
 import com.nirvana.code.core.view.RoundProgressBar;
 import com.nirvana.code.model.BannerModel;
 import com.nirvana.code.model.Channel;
 import com.nirvana.code.model.MenuPopBean;
+import com.nirvana.code.mvp.view.login.KLoginActivity;
 import com.nirvana.code.share.ShareCommon;
 import com.nirvana.code.task.NVTaskExecutor;
 import com.nirvana.code.utils.SharedPreferUtils;
+import com.nirvana.code.widgets.CircleImageView;
 import com.nirvana.code.widgets.PopMenuView;
 import com.nirvana.product.mainpage.MainPageContract;
 import com.nirvana.product.mainpage.MainPagePresenterImpl;
@@ -215,7 +218,16 @@ public class Splash extends BaseActivity<MainPagePresenterImpl>
         navigationView.setNavigationItemSelectedListener(this);
 
         View view = navigationView.getHeaderView(0);
+
         mGridView = (GridView) view.findViewById(R.id.common_channel);
+        CircleImageView userIcon =  view.findViewById(R.id.imageView);
+        userIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Splash.this, KLoginActivity.class);
+                startActivity(intent);
+            }
+        });
         mMainDrawSlipText = (TextView) view.findViewById(R.id.main_draw_slip_test);
         mHotTagsGridView = (RecyclerView) findViewById(R.id.hot_tags_grid);
         mHotTagsGridView.setLayoutManager(new StaggeredGridLayoutManager(3,StaggeredGridLayoutManager.VERTICAL));

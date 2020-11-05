@@ -1,4 +1,4 @@
 package com.nirvana.code.mvp.view.login
 
-class KLoginView {
+interface KLoginView:ILoginView{
 }

@@ -31,6 +31,7 @@
         <activity android:name=".WebViewActivity" android:theme="@style/DayTheme"
             ></activity>
         <activity android:name=".test.TestDefinedView"></activity>
+        <activity android:name=".mvp.view.login.KLoginActivity" android:theme="@style/DayTheme"></activity>
         <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"
